@@ -42,7 +42,7 @@ public class EapExtractor
     {
         String dateiName = System.getProperty("user.dir") + "\\..\\..\\";
         //dateiName += "DemoEapVerarbeitung01.eap";
-        dateiName += "EapCppGenerator.eap";
+        dateiName += "AmpelSystem.eap";
 
         //dateiName += "DemoEapVerarbeitungAmpel.eap";
         Modell modell = importiereModellEap(dateiName);
