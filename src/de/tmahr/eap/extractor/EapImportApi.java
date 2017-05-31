@@ -76,11 +76,11 @@ public class EapImportApi {
             element = modellErbauer.erstelleElement(elementName, elementId, elementTyp, paket, stereotypen);
             elementeAuslesen(modellErbauer, element, sparxElement);
             verbindungenAuslesen(modellErbauer, sparxElement);
-            if(element.typ() == "Interface" || element.typ() == "Class")
+            if(element.typ().equals("Interface") || element.typ().equals("Class"))
             {
                 methodenAuslesen(modellErbauer, element, sparxElement);
             }
-            if(element.typ() == "Class")
+            if(element.typ().equals("Class"))
             {
                 attributeAuslesen(modellErbauer, element, sparxElement);
             }
@@ -97,11 +97,11 @@ public class EapImportApi {
             Element element = modellErbauer.erstelleElement(elementName, elementId, elementTyp, elternElement, stereotypen);
             elementeAuslesen(modellErbauer, element, sparxElement);
             verbindungenAuslesen(modellErbauer, sparxElement);
-            if(element.typ() == "Interface" || element.typ() == "Class")
+            if(element.typ().equals("Interface") || element.typ().equals("Class"))
             {
                 methodenAuslesen(modellErbauer, element, sparxElement);
             }
-            if(element.typ() == "Class")
+            if(element.typ().equals("Class"))
             {
                 attributeAuslesen(modellErbauer, element, sparxElement);
             }
